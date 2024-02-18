@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="" id="basicform" enctype="multipart/form-data">   //method="POST" enc="multipart/form-data" content="width=device-width, initial-scale=1.0
+        <div>
+            <label for="name">Name</label>
+            <input name="name" id="name" placeholder="username" required>
+        </div>
+        <div for="email">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required placeholder="email">
+        </div>
+        <div>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+        <div>
+            <label for="age">Age </label>
+            <input type="number" name="age" id="age" min="1" max="200" step="1">
+        </div>
+        <div>
+            <label for="date">Birthdate</label>
+            <input id="date" name="date" type="date" min="2023-02-17">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="password" required>
+        </div>
+        <div>
+            Gender
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="m">
+        </div>
+        <div>
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="f">
+        </div>
+        <div>
+           <label for="other">Other</label>
+            <input type="radio" name="gender" id="other" value="o">
+        </div>
+        <div>
+            <label for="Region">Region</label>
+            <select id="region">
+                <option value="Asia">Asia</option>
+                <option value="Antartica">Antartica</option>
+                <option value="Australia">Australia</option>
+                <option value="Europe">Europe</option>
+                <option valur="North Amercia">North Amercia</option>
+                <option value="South America">South America</option>
+             </select>
+        </div>
+        <div>
+            <label fro="photo">Your photo</label>
+            <input id="photo" type="file" name="Photo" accept="image/*" required>
+        </div>
+        <div>
+            <button type="submit" name="submit-form">Submit</button>
+        </div>
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="form.js"></script>
+</body>
+</html>
